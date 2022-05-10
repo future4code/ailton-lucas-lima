@@ -3,6 +3,7 @@ let b = 10
 console.log(b)
 b = 5
 console.log(a, b)*/
+
 /*let a = 10
 let b = 20
 c = a
@@ -18,7 +19,14 @@ alert(`Voce recebe ${salario/trabalho} por hora`)
 
 /*let nome =("")
 let idade =("")
-console.log (typeof idade, nome)*/
+console.log (typeof idade, nome)
+let IDADE = number(idade)
+console.log(typeof IDADE, NOME)
+*/
+
+//RESPOSTA 
+  // NUMBER / STRIENG
+
 
 // O resultado foi string devido a que o programa entende que é um codigo tipo texto
 
