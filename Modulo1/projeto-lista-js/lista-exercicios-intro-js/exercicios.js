@@ -1,195 +1,165 @@
-// EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
 
-// EXERCÍCIO 0A
+// Exercício 0A
+
 function soma(num1, num2) {
-  // implemente sua lógicanum1: 1
-
-      soma (num1+num2)
-
-      
-
-  return 3
+  // implemente sua lógica aqui
+  return num1 + num2
 }
 
-// EXERCÍCIO 0B
+// Exercício 0B
+
 function imprimeMensagem() {
   // implemente sua lógica aqui
-  const mensagem = prompt("hola mundo")
+  const mensagem = prompt('Digite uma mensagem!')
 
   console.log(mensagem)
 }
 
-// EXERCÍCIOS PARA FAZER ------------------------------------------------------------------
+// Exercícios
 
-// EXERCÍCIO 01
-function calculaAreaRetangulo( a , b ) {
+//Exercício 1
+
+function calculaAreaRetangulo() {
   // implemente sua lógica aqui
-  let calculaAreaRetangulo =  a * b
-// let altura  =prompt("coloque uma altura do restangulo ")
-//  let largura  =prompt("coloque uma largura do retangulo ")
-// let altura1=Number(altura)
-// let largura1=Number(largura)
-let altura1 = 3
-let largura1 = 5
-
-let resultado = calculaAreaRetangulo( altura1 , largura1 )
-console.log (resultado)
-
-
-
-} 
-
-// EXERCÍCIO 02
-function imprimeIdade( a , b) {
-  // implemente sua lógica aqui
-
-  let imprimeIdade =   a - b
-let nascimento = (1967)
-let anoAtual =(2021) 
-
-let resultado = imprimeIdade (nascimento , anoAtual)
-
-console.log (resultado)
+  const altura = Number(prompt("Insira a altura"))
+  const largura = Number(prompt("Insira a largura"))
+  console.log(altura * largura)
 }
 
-// EXERCÍCIO 03
+//Exercício 2
+
+function imprimeIdade() {
+  // implemente sua lógica aqui
+  const anoAtual = Number(prompt("Insira o ano atual"))
+  const anoNascimento = Number(prompt("Insira seu ano de nascimento"))
+  console.log(anoAtual - anoNascimento)
+}
+
+//Exercício 3
+
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-  let AlturaUsuario =prompt("sua altura")
-  let PesoDoUsuario =prompt(" seu peso ") 
-
-  let peso1 =Number(PesoDoUsuario)
-  let altura1= Number(AlturaUsuario)
-
-   let calculaIMC = (altura * altura)  / peso 
-   
-   let imc = calculaIMC (altura1,altura1,peso1)
-console.log (imc)
+  return peso / (altura * altura)
 }
 
-// EXERCÍCIO 04
-function imprimeInformacoesUsuario(nome, idade, email ) {
+//Exercício 4
+
+function imprimeInformacoesUsuario() {
   // implemente sua lógica aqui
-  // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
-let nome = prompt(" Qual é o sue nome ?")
-let idade = prompt("Qual é a sua idade ?")
-let email = prompt("Qual é o seu email ")
+  const nome = prompt("Insira seu nome")
+  const idade = prompt("Insira sua idade")
+  const email = prompt("Insira seu email")
 
-let frase = imprimeInformacoesUsuario ( `Meu nome é ${nome},
- tenho ${idade} anos, e o meu email é ${email}.`)
-
-console.log(frase)
-
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 }
 
-// EXERCÍCIO 05
-function imprimeTresCoresFavoritas(cor1,cor2,cor3) {
+//Exercício 5
+
+function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-let cor1=prompt("Digite uma cor")
-let cor2=prompt("Digite outra cor")
-let cor3=prompt("Digite uma terceira cor")
- let cores= imprimeIdade [cor1,cor2,cor3]
- console.log (cores)
-
+  const cor1 = prompt("Insira sua primeira cor favorita")
+  const cor2 = prompt("Insira sua segunda cor favorita")
+  const cor3 = prompt("Insira sua terceira cor favorita")
+  console.log([cor1, cor2, cor3])
 }
 
-// EXERCÍCIO 06
+//Exercício 6
+
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-let retornaStringEmMaiuscula = string.toUppercase()
-let palavra= ( "palavra" )
-
-console.log (retornaStringEmMaiuscula (palavra))
-
+  return string.toUpperCase()
 }
 
-// EXERCÍCIO 07
+//Exercício 7
+
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-   calculaAreaRetangulo = (custo / valorIngresso) 
-
-let ingresso = 100 
-let espetaculo= 3000
-
-let resultado = calculaIngressosEspetaculo (espetaculo, ingresso)
-console.log (resultado)
+  return custo / valorIngresso
 }
 
-// EXERCÍCIO 08
+// Exercício 8
+
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-checaStringsMesmoTamanho = string1.length()===string2.length() 
+  return string1.length === string2.length
+}
 
-let palavra1 = ("casa")
-let palavra2 = ("maca")
+// Exercício 9
 
-let resultado =checaStringsMesmoTamanho (palavra1,palavra2)
-
-console.log (resultado)
-
-// EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-retornaPrimeiroElemento = array [0]
-
-let numeros = [1,2,3,4,5]
-let resultado = retornaUltimoElemento (numeros)
-
-console.log (resultado)
+  return array[0]
 }
 
-// EXERCÍCIO 10
+// Exercício 10
+
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-retornaUltimoElemento = array [6]
-
-let numeros = [1,2,3,4,5,6]
-let resultado = retornaUltimoElemento (numeros)
-
-console.log (resultado)
-
+  return array[array.length - 1]
 }
 
-// EXERCÍCIO 11
-function trocaPrimeiroEUltimo(array1, array2, array3) {
+//Exercício 11
+
+function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-trocaPrimeiroEUltimo = array1 [0] = [5]
-                        
+  const primeiro = retornaPrimeiroElemento(array)
+  const ultimo = retornaUltimoElemento(array)
 
+  array[0] = ultimo
+  array[array.length - 1] = primeiro
 
-let perros = [pudle , putbull , york ]
-let perrosNumero = Number(perros)
-
+  return array
 }
 
-// EXERCÍCIO 12
+// Exercício 12
+
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
- checaStringsMesmoTamanho = string1.length , string2.length , string1 !== string2
-
-let tamanho1= (palavra)
-let tamanho2 = (palavra2)
-
-let resultado = checaStringsMesmoTamanho(tamanho1,tamanho2)
-
-console.log (resultado)
+  return string1.toLowerCase() === string2.toLowerCase()
 }
 
-// EXERCÍCIO 13
+// Exercício 13
+
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+ const anoAtual = +prompt("qual é o ano atual ?")
+ const nascimento = +prompt("Em qual ano voce nasceu?")
+ const AnoDeEmissao = +prompt("Ano de emissao do seu RG ?")
+
+ const idade = anoAtual - nascimento
+ const Rg = anoAtual - AnoDeEmissao
+
+ let con1 = idade <= 20 && Rg >= 5   
+ let con2 = idade <= 50 && idade > 20 && Rg >= 10  
+ let con3 = idade > 50 && Rg >= 15
+ 
+ console.log (con1||con2||con3)
+
+
 
 }
 
-// EXERCÍCIO 14
+// Exercício 14
+
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+let Condiçao1 = ano % 400 === 0 
+let consiçao2 = (ano % 4 === 0) && ( ano % 100 !== 0)
+
+return (Condiçao1 || consiçao2)
+
 
 }
 
-// EXERCÍCIO 15
+// Exercício 15
+
 function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
+const maiorDeDezoito= prompt("Voce tem mais de 18 anos ?")
+const ensinoMedioCompleto=prompt("voce possui ensino medio completo ?")
+const disponibilidade= prompt("Voce dispoe de tempo para o curso?")
+
+
+
+console.log (maiorDeDezoito==="sim"&& ensinoMedioCompleto==="sim"&& disponibilidade==="sim")
 
 }

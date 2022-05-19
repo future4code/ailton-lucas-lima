@@ -1,131 +1,32 @@
-// const filme = {
-// 	nome: "Auto da Compadecida", 
-// 	ano: 2000, 
-// 	elenco: [
-// 		"Matheus Nachtergaele", "Selton Mello", "Denise Fraga", 
-// 		"Virginia Cavendish"
-// 		], 
-// 	transmissoesHoje: [
-// 		{canal: "Telecine", horario: "21h"}, 
-// 		{canal: "Canal Brasil", horario: "19h"}, 
-// 		{canal: "Globo", horario: "14h"}
-// 		]
+
+// let Object = {
+//     nome: "Amanda Rangel",
+//     idade: 27,
+//     musica_preferida : "rock",
+// }
+// // console.log (`O nome da pessoa é ${Object.nome} , ela tem ${Object.idade} e gosta muito de ${Object.musica_preferida} `)
+// Object.comida_preferida = ["lasanha","sushi","paella"]
+
+// Object.melhor_amigo = {
+//       nome: "Eduardo",
+//       idade: 30
 // }
 
-// console.log(filme.elenco[0])
-// console.log(filme.elenco[filme.elenco.length - 1])
-// console.log(filme.transmissoesHoje[2])
-// ...........................................................................
+// console.log(`O nome da pessoa é ${Object.nome} e suas comidas preferidas são ${Object.comida_preferida[0]},${Object.comida_preferida[1]} e 
+// ${Object.comida_preferida[2]}. Seu melhor amigo se chama ${Object.melhor_amigo.nome} e tem ${Object.melhor_amigo.idade}anos`)
 
 
-
-
-// const cachorro = {
-// 	nome: "Juca", 
-// 	idade: 3, 
-// 	raca: "SRD"
+// let filme = {
+//     nome_do_filme:("Terminator1"),
+//     Director:("James Cameron"),
+//     elenco:["Arnold Schwarzenegger","Linda Hamilton","Michael Biehn"],
+//     ano: 1984
 // }
+// filme.personagem = ["exterminador","atriz","protetor do fututo"]
+// console.log(filme.elenco[0], "protagonizava",filme.personagem[0])
+// filme.elenco[0]= "xuxa"
+// console.log(filme)
 
-// const gato = {...cachorro, nome: "Juba"}
-
-// const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
-
-// console.log(cachorro)
-// console.log(gato)
-// console.log(tartaruga)
+// console.log (`O nome do filme é ${filme.nome_do_filme}. Seus personagens são ${filme.elenco[0]}, que cumpre o papel de ${filme.personagem[0]}`)
 
 
-// ...........................................................................
-
-
-// function minhaFuncao(objeto, propriedade) {
-// 	return objeto[propriedade]
-// }
-
-// const pessoa = {
-//   nome: "Caio", 
-//   idade: 23, 
-//   backender: false
-// }
-
-// console.log(minhaFuncao(pessoa, "backender"))
-// console.log(minhaFuncao(pessoa, "altura"))
-
-// .....................................................................
-
-// A_ a) Crie um objeto. Ele deve conter duas propriedades:
-//  nome (string) e apelidos (um array que sempre terá exatamente três apelidos).
-//   Depois, escreva uma função que recebe 
-// como entrada um objeto e imprime uma mensagem no modelo abaixo:
-
-
-// let Objeto = {
-// Nome: "lauro",
-// Apelidos : ["cantor","capivara","patu"]   
-// }
-
-
-// function nomes (obj) {
-//     console.log(`Eu sou ${obj.Nome}, mas pode me chamar de:${obj.Apelidos[0]},
-//     ${obj.Apelidos[1]},${obj.Apelidos[2]}`)
-
-// }
-// nomes(Objeto)
-
-
-
-// let objeto2 = {
-// ...Objeto,
-// Apelidos : ["guga","japo","parceiro"]
-// }
-// nomes(objeto2)
-
-
-
-// ------------------------------------------------------
-
-// let irmao = {
-//     nome: "guilherme",
-//     idade:  30,
-//     profissao: "medico"
-// }
-// let irma = {
-//     nome: "carol",
-//     idade:26,
-//     profissao: "professora"
-// }
-
-// function resultado(obj1) {
-//     array = obj1
-//     console.log ([`${array.nome}, ${array.nome.length}, ${array.idade},${array.profissao.length} `])
-//     return resultado
-// }
-
-// resultado(irma)
-
-// ..............................................................................................
- 
-let carrinho = []
-
-let objeto1 = {
-nome : "morango",
-disponibilidade : true
-}
-let objeto2= {
-    nome : "manga",
-    disponibilidade: "false"
-}
-let objeto3 = {
-nome: "uva",
-disponibilidade: true
-}
-
-function repartir(fruta) {
-    carrinho.push(fruta)
-return repartir
-}
-
-repartir(objeto1)
-repartir(objeto2)
-repartir(objeto3)
- console.log(carrinho)
