@@ -5,21 +5,21 @@
 // a-)Comparador de desigualdade a!==b 
 // Exemplo:
 
-function checarDesigualdade(a, b) {
+// function checarDesigualdade(a, b) {
 
-    return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
-}
-console.log(checarDesigualdade(1, 3));
+//     return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
+// }
+// console.log(checarDesigualdade(1, 3));
 
-function checarIgualdade(a, b) {
-     return (a === b)   
-}
-console.log (checarIgualdade(1,2));
+// function checarIgualdade(a, b) {
+//      return (a === b)   
+// }
+// console.log (checarIgualdade(1,2));
 
-function verificaSeEMaior(a,b) {
-    return (a > b)
-}
-console.log(verificaSeEMaior(321, 2156));
+// function verificaSeEMaior(a,b) {
+//     return (a > b)
+// }
+// console.log(verificaSeEMaior(321, 2156));
 
 
 // Exercício 2------------------------------------------------------------------------------------
@@ -54,23 +54,46 @@ console.log(verificaSeEMaior(321, 2156));
 
 
 // Exercício 4-----------------------------------------------------------------------------------------------
-function login() {
-    let PedirSenha = prompt("digite uma senha")
-    let PedirSenha1= prompt ("confirme a tua senha ")
-    if (PedirSenha === PedirSenha1){ console.log ("Usuario logado")}
-    else{console.log("Senha Inválida")}
-}
-console.log(login());
+// function login() {
+//     let PedirSenha = prompt("digite uma senha")
+//     let PedirSenha1= prompt ("confirme a tua senha ")
+//     if (PedirSenha === PedirSenha1){ console.log ("Usuario logado")}
+//     else{console.log("Senha Inválida")}
+// }
+// console.log(login());
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
-const primeiraDose = () => {
+// const primeiraDose = () => {
+   
 
-    //  Sua lógica aqui
+// let nome = prompt("Qual é o teu nome ?")
+// let vacina = prompt(" Qual a  vacina que voce tomou Pfizer,Astrazenica,Coronavac ?")
+// let tempoVac = 28
+// let dataVac = ( "29/08/2021")
 
+// let tempoAstra = 30
+// let dataAstra = ( "30/08/2021")
 
-}
-console.log(primeiraDose())
+// let tempoPizer = 30
+// let dataPizer = ( "30/08/2021")
+
+// if (vacina === "Coronavac"){
+//  console.log(`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempoVac} dias. 
+//  Compareça no posto na data ${dataVac}.`)}
+
+//  else if (vacina === "Astrazenica"){
+//  console.log(`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempoAstra} dias. 
+//  Compareça no posto na data ${dataAstra}.`)}
+
+//  else if (vacina === "Pfizer"){
+//     console.log(`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempoPizer} dias. 
+//     Compareça no posto na data ${dataPizer}.`)}
+// else {console.log ("vacina nao encontrada")}
+// return primeiraDose()        
+// }
+
+// console.log(primeiraDose())
 
 
 // LOOP+CONDICIONAL
@@ -83,11 +106,12 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Barbara", imunizacao: "incompleta" },
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
+    const cambioDeEstado = segundaDose.map((estado) => {
+		return {...estado, imunizacao: estado.imunizacao }
 
-    //  Sua lógica aqui
-
-
+    })
 }
+
 console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
