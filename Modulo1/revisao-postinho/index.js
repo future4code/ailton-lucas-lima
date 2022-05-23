@@ -100,33 +100,39 @@
 
 // Exercício 6 -------------------------------------------------------------------------------------
 
-const segundaDose = (nomeDoUsuario) => {
-    const usuarios = [
-        { nome: "Artur", imunizacao: "incompleta" },
-        { nome: "Barbara", imunizacao: "incompleta" },
-        { nome: "Carlos", imunizacao: "incompleta" }
-    ]
-    const cambioDeEstado = segundaDose.map((estado) => {
-		return {...estado, imunizacao: estado.imunizacao }
+// const segundaDose = (nomeDoUsuario) => {
+//     const usuarios = [
+//         { nome: "Artur", imunizacao: "incompleta" },
+//         { nome: "Barbara", imunizacao: "incompleta" },
+//         { nome: "Carlos", imunizacao: "incompleta" }
+//     ]
+//     const cambioDeEstado = usuarios.map((estado) => {
+// 		return {...estado, imunizacao: estado.imunizacao = "completa"}
+//     })
+//    return cambioDeEstado
+// }
+// console.log(segundaDose("Barbara"))
 
-    })
-}
-
-console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
 
 const avisoAosAtrasados = () => {
-    const usuarios = [
+    const usuarios1 = [
         { nome: "Artur", imunizacao: "incompleta" },
-        { nome: "Barbara", imunizacao: "completa" },
+        { nome: "Barbara", imunizacao: "completa" }, 
         { nome: "Carlos", imunizacao: "incompleta" }
-    ]
-
-    //  Sua lógica aqui
-
+    ] 
+   
+    return usuarios1
 }
-console.log(avisoAosAtrasados());
+    
+   let Lista = usuarios1.filter((iten)=>{
+       if(iten === imunizacao ==="imcompleta")
+       return (`Paciente ${nome}, voce deve comparecer ao posto de saude para receber uma dose 
+       extra ja que a tua vacina esta ${imunizacao}`)
+       console.log (Lista)
+   })
+
 
 
 // DESAFIO------------------------------------------------------------------------------------------
