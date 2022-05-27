@@ -1,0 +1,29 @@
+h1{
+    color: blueviolet;
+    text-align:center; 
+   
+    background-color: rgba(83, 167, 140, 0.277);
+    font-size: 40px;
+
+}
+.Bem_vindo {
+      color: black;
+      text-align:center; 
+      border-style:dashed;
+      font-size: 50px;
+}
+.viva{
+    text-align:left;
+    list-style-type:lower-alpha;
+    font-size: 40px;
+    display:inline-block;
+    background-color: rgb(154, 130, 177);
+    color: azure;
+}
+a{
+    font-size: 30px;
+}
+.low {
+    color: rgb(217, 19, 19);
+    list-style-type: lower-alpha;
+}
